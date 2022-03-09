@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    color: #45845;
+    font-weight: 300;
+    font-family: 'Montserrat', 'Helvatica' , sans-serif;
+    font-size: 1rem;
+    padding:0; 
+    margin:0;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#button  {
+    background-color: rgba(220,220,235,0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+}
+
+#button:hover {
+    background-color: rgba(220,220,235,0.7);
+    transition: all ease 0.3s;
+}
+
+#output, #button{
+    padding: 1rem;
+}

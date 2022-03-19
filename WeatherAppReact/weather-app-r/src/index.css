@@ -1,0 +1,115 @@
+:root {
+    --color-default:#fff;
+    --color-title: #ffe978;
+    --color-search-background:#eaeaea;
+    --color-result-background: #474747;
+    --title-text-size:48px;
+    --search-text-size:22px;
+    --city-text-size:64px;
+    --degree-text-size:76px;
+    --statu-text-size:36px;
+}
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+    left:0;
+    top:0;
+    
+}
+
+.background .background-img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    right: 0;
+    bottom:0;
+    
+}
+
+.background .overlay {
+    position: absolute;
+    z-index:-3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#title {
+    margin-top:40px;
+    text-align: center;
+    color: var(--color-title);
+    font-size: var(--title-text-size);
+}
+
+.search {
+    display:flex;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.search .search-input {
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding:20px;
+    border: none;
+    font-size: var(--search-text-size);
+    background-color: var(--color-search-background);
+}
+
+.result{
+    position: relative;
+    margin-top: 100px;
+}
+
+.result .city {
+    color:var(--color-default);
+    font-size: var(--city-text-size);
+    text-align: center;
+}
+
+.result .details {
+    margin-top: 60px;
+    width: 100%;
+    height: 160px;
+    background-color: var(--color-result-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result .details .degree {
+    color:var(--color-default);
+    font-size: var(--degree-text-size);
+    font-weight: bold;
+}
+
+.result .details .statu{
+    color: var(--color-default);
+    font-size: var(--statu-text-size);
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 950px) {
+    .uygulama{
+        width: 33%;
+        height:100vh;
+        margin:0 auto;
+        background-color:rgba(3,3,3,0.67);
+        opacity: 1;
+    }
+}
+
